@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="fb" x1="0.9" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#4F8FFF"/><stop offset="1" stop-color="#256BEB"/></linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#080B10" stroke="#256BEB" stroke-width="3"/>
+  <g transform="translate(15.6 19.8) scale(0.1)">
+    <polygon points="0,28 76,28 178,201 140,263" fill="#F5F7FA"/>
+    <polygon points="246,0 328,0 200,221 164,156" fill="url(#fb)"/>
+  </g>
+</svg>

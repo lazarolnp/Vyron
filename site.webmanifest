@@ -1,0 +1,12 @@
+{
+  "name": "VYRON — Agência Digital",
+  "short_name": "VYRON",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#080B10",
+  "background_color": "#080B10",
+  "display": "standalone",
+  "start_url": "."
+}
