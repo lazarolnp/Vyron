@@ -9,7 +9,7 @@ HTML, CSS e JavaScript puros, sem etapa de build: basta publicar os arquivos em 
 index.html              Página única com todas as seções
 assets/css/styles.css   Estilos (mobile-first)
 assets/js/config.js     ⚙️ Dados de contato (WhatsApp, e-mail)
-assets/js/main.js       Menu, animações, formulário → WhatsApp
+assets/js/main.js       Menu, animações e links do WhatsApp
 assets/img/             Logo, favicon, ícones e imagem de compartilhamento (OG)
 site.webmanifest, robots.txt
 ```
