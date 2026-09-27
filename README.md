@@ -16,19 +16,20 @@ site.webmanifest, robots.txt
 
 Para visualizar localmente: `python3 -m http.server` e abra http://localhost:8000.
 
-## Configurar o WhatsApp
+## Contato (WhatsApp e e-mail)
 
-Edite `assets/js/config.js`:
+Os dados já estão configurados. Para alterá-los, edite `assets/js/config.js`:
 
 ```js
-whatsapp: "5511999999999",          // DDI + DDD + número, só dígitos
-whatsappDisplay: "(11) 99999-9999", // como aparece no site
+whatsapp: "5579998242217",          // DDI + DDD + número, só dígitos
+whatsappDisplay: "(79) 99824-2217", // como aparece no site
+email: "vyronn01@gmail.com",
 ```
 
 Todos os botões "Falar com a VYRON", o botão flutuante e o formulário de contato passam a usar esse número.
 O formulário não precisa de servidor: ao enviar, abre o WhatsApp com a mensagem já preenchida.
 
-Também é possível trocar o e-mail em `email` (enquanto contiver `[`, é exibido como placeholder).
+O número e o e-mail também aparecem escritos em `index.html` (links de fallback e dados estruturados); ao trocar, faça uma busca por `5579998242217` e `vyronn01@gmail.com`.
 
 ## Atualizar projetos e depoimentos
 

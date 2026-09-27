@@ -7,16 +7,16 @@
  */
 window.VYRON_CONFIG = {
   // Número usado nos links do WhatsApp (apenas dígitos, com DDI 55 + DDD).
-  whatsapp: "[WHATSAPP_DA_VYRON]",
+  whatsapp: "5579998242217",
 
   // Como o número aparece escrito no site (ex.: "(11) 99999-9999").
-  whatsappDisplay: "[WHATSAPP_DA_VYRON]",
+  whatsappDisplay: "(79) 99824-2217",
 
   // Mensagem inicial enviada ao abrir a conversa.
   whatsappMessage: "Olá, VYRON! Gostaria de conversar sobre o digital da minha empresa.",
 
   // E-mail de contato (deixe como está até ter o endereço real).
-  email: "[EMAIL_DA_VYRON]",
+  email: "vyronn01@gmail.com",
 
   instagram: "https://instagram.com/vyron.agencybr"
 };
