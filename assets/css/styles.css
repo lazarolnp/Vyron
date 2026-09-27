@@ -573,7 +573,8 @@ body.no-scroll { overflow: hidden; }
 
 /* ---------- Serviços ---------- */
 .services { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%); }
-.services::before {
+.services::before,
+.process::before {
   content: "";
   position: absolute;
   top: 0; left: 50%;
@@ -628,36 +629,8 @@ body.no-scroll { overflow: hidden; }
   color: var(--white);
 }
 
-/* ---------- Sobre ---------- */
-.about-inner { display: grid; gap: 44px; }
-.about-copy h2 { font-size: clamp(32px, 7.5vw, 48px); margin-bottom: 22px; }
-.about-lead {
-  font-family: var(--font-head);
-  font-size: clamp(19px, 4.6vw, 23px);
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: -0.015em;
-  margin-bottom: 18px;
-}
-.about-copy p:not(.about-lead):not(.kicker) { color: var(--ink-muted); font-size: 17px; }
-.about-copy strong { color: var(--ink); font-weight: 600; }
-.principles { display: grid; gap: 14px; }
-.principle {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  padding: 20px 22px;
-  border-radius: var(--radius);
-  background: #fff;
-  border: 1px solid var(--light-line);
-  box-shadow: var(--shadow-light);
-  transition: transform .3s var(--ease), border-color .3s;
-}
-.principle:hover { transform: translateX(4px); border-color: rgba(37, 107, 235, 0.35); }
-.principle h3 { font-size: 18px; margin-bottom: 4px; }
-.principle p { color: var(--ink-muted); font-size: 15px; line-height: 1.5; }
-
 /* ---------- Processo ---------- */
+.process { background: var(--bg-2); }
 .timeline { position: relative; display: grid; }
 .timeline::before {
   content: "";
@@ -899,8 +872,6 @@ body.no-scroll { overflow: hidden; }
 
   .service-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .service-card { padding: 34px 30px 36px; }
-
-  .about-inner { grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 
   .timeline { grid-template-columns: repeat(4, 1fr); gap: 32px; }
   .timeline::before {

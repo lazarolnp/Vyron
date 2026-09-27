@@ -32,8 +32,8 @@ O número e o e-mail também aparecem escritos em `index.html` (links de fallbac
 
 ## Seções
 
-Início · Serviços · Sobre · Processo · Contato — uma página curta de apresentação.
-As versões anteriores com Portfólio, Depoimentos e formulário estão no histórico do git, caso queira reativá-las quando houver projetos e depoimentos reais.
+Início · Serviços · Processo · Contato — uma página curta de apresentação.
+As versões anteriores com Portfólio, Depoimentos, "Por trás da VYRON" e formulário estão no histórico do git, caso queira reativá-las quando houver projetos e depoimentos reais.
 
 ## Logo
 
