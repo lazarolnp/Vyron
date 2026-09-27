@@ -28,17 +28,8 @@
     el.textContent = config.whatsappDisplay || config.whatsapp || PLACEHOLDER;
   });
   if (config.email) {
-    document.querySelectorAll("[data-email]").forEach(function (el) {
-      var isReal = /@/.test(config.email) && config.email.indexOf("[") === -1;
-      if (isReal) {
-        var a = document.createElement("a");
-        a.href = "mailto:" + config.email;
-        a.textContent = config.email;
-        el.replaceWith(a);
-      } else {
-        el.textContent = config.email;
-      }
-    });
+    document.querySelectorAll("[data-email]").forEach(function (el) { el.textContent = config.email; });
+    document.querySelectorAll("[data-email-link]").forEach(function (el) { el.href = "mailto:" + config.email; });
   }
 
   /* ---------- Header ---------- */
@@ -137,62 +128,5 @@
     reveals.forEach(function (el) { revealObserver.observe(el); });
   } else {
     reveals.forEach(function (el) { el.classList.add("is-visible"); });
-  }
-
-  /* ---------- Formulário → WhatsApp ---------- */
-  var form = document.getElementById("contact-form");
-  var status = document.getElementById("form-status");
-  var defaultNote = status ? status.textContent : "";
-
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var data = new FormData(form);
-      var missing = [];
-
-      ["nome", "whatsapp", "mensagem"].forEach(function (name) {
-        var field = form.elements[name];
-        var empty = !String(data.get(name) || "").trim();
-        field.closest(".field").classList.toggle("has-error", empty);
-        field.setAttribute("aria-invalid", String(empty));
-        if (empty) missing.push(field);
-      });
-
-      var email = form.elements.email;
-      var emailInvalid = email.value.trim() !== "" && !email.checkValidity();
-      email.closest(".field").classList.toggle("has-error", emailInvalid);
-      email.setAttribute("aria-invalid", String(emailInvalid));
-      if (emailInvalid) missing.push(email);
-
-      if (missing.length) {
-        status.textContent = "Preencha nome, WhatsApp e como podemos ajudar (e confira o e-mail, se informado).";
-        status.classList.add("is-error");
-        missing[0].focus();
-        return;
-      }
-
-      status.textContent = defaultNote;
-      status.classList.remove("is-error");
-
-      var lines = [
-        "Olá, VYRON! Vim pelo site.",
-        "",
-        "*Nome:* " + data.get("nome").trim()
-      ];
-      if (String(data.get("empresa")).trim()) lines.push("*Empresa:* " + data.get("empresa").trim());
-      lines.push("*WhatsApp:* " + data.get("whatsapp").trim());
-      if (String(data.get("email")).trim()) lines.push("*E-mail:* " + data.get("email").trim());
-      lines.push("", "*Como podemos ajudar?*", data.get("mensagem").trim());
-
-      window.open(whatsappUrl(lines.join("\n")), "_blank", "noopener");
-    });
-
-    form.addEventListener("input", function (e) {
-      var field = e.target.closest(".field");
-      if (field && field.classList.contains("has-error") && e.target.value.trim()) {
-        field.classList.remove("has-error");
-        e.target.setAttribute("aria-invalid", "false");
-      }
-    });
   }
 })();

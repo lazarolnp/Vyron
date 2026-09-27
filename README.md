@@ -26,15 +26,18 @@ whatsappDisplay: "(79) 99824-2217", // como aparece no site
 email: "vyronn01@gmail.com",
 ```
 
-Todos os botões "Falar com a VYRON", o botão flutuante e o formulário de contato passam a usar esse número.
-O formulário não precisa de servidor: ao enviar, abre o WhatsApp com a mensagem já preenchida.
+Todos os botões "Falar com a VYRON" e o botão flutuante passam a usar esse número.
 
 O número e o e-mail também aparecem escritos em `index.html` (links de fallback e dados estruturados); ao trocar, faça uma busca por `5579998242217` e `vyronn01@gmail.com`.
 
-## Atualizar projetos e depoimentos
+## Seções
 
-- **Projetos** (`#projetos` em `index.html`): há instruções em comentário acima da seção. Troque o bloco `project-placeholder` por uma `<img>` em `assets/img/projetos/` e edite título/categoria.
-- **Depoimentos**: substitua os textos entre colchetes por depoimentos **reais e autorizados** e remova a classe `is-placeholder` do `<figure>`.
+Início · Serviços · Sobre · Processo · Contato — uma página curta de apresentação.
+As versões anteriores com Portfólio, Depoimentos e formulário estão no histórico do git, caso queira reativá-las quando houver projetos e depoimentos reais.
+
+## Logo
+
+O símbolo V fica em `assets/img/logo-mark.svg` e também em linha no `index.html` (`<symbol id="logo-v">`). O favicon (`favicon.svg` + PNGs) usa a versão circular com anel azul, como a foto de perfil do Instagram.
 
 ## Quando tiver domínio
 
