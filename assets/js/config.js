@@ -7,10 +7,10 @@
  */
 window.VYRON_CONFIG = {
   // Número usado nos links do WhatsApp (apenas dígitos, com DDI 55 + DDD).
-  whatsapp: "5579998242217",
+  whatsapp: "5579998332217",
 
   // Como o número aparece escrito no site (ex.: "(11) 99999-9999").
-  whatsappDisplay: "(79) 99824-2217",
+  whatsappDisplay: "(79) 99833-2217",
 
   // Mensagem inicial enviada ao abrir a conversa.
   whatsappMessage: "Olá, VYRON! Gostaria de conversar sobre o digital da minha empresa.",

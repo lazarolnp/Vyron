@@ -21,14 +21,14 @@ Para visualizar localmente: `python3 -m http.server` e abra http://localhost:800
 Os dados já estão configurados. Para alterá-los, edite `assets/js/config.js`:
 
 ```js
-whatsapp: "5579998242217",          // DDI + DDD + número, só dígitos
-whatsappDisplay: "(79) 99824-2217", // como aparece no site
+whatsapp: "5579998332217",          // DDI + DDD + número, só dígitos
+whatsappDisplay: "(79) 99833-2217", // como aparece no site
 email: "vyronn01@gmail.com",
 ```
 
 Todos os botões "Falar com a VYRON" e o botão flutuante passam a usar esse número.
 
-O número e o e-mail também aparecem escritos em `index.html` (links de fallback e dados estruturados); ao trocar, faça uma busca por `5579998242217` e `vyronn01@gmail.com`.
+O número e o e-mail também aparecem escritos em `index.html` (links de fallback e dados estruturados); ao trocar, faça uma busca por `5579998332217` e `vyronn01@gmail.com`.
 
 ## Seções
 
